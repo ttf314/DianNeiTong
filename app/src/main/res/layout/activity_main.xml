@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg2"
+    tools:context=".acticity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名："
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                android:textSize="20sp"/>
+
+            <EditText android:id="@+id/et_uname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:hint="请输入用户名"
+                android:text="BOSS"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密    码："
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/et_upass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:inputType="textPassword"
+                android:hint="请输入用户密码"
+                android:text="BOSS"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <Button
+                android:background="@drawable/btn_all_shape"
+                android:id="@+id/btn_login"
+                android:layout_width="155dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:text="登录"
+                android:textColor="#FF5722"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:background="@drawable/btn_all_shape"
+                android:textColor="#FF5722"
+                android:id="@+id/btn_zuche"
+                android:layout_width="155dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:text="注册"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

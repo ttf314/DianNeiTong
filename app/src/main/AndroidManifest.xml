@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dianneitong">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tu12"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tu12"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".UserManager2Activity">
+
+        </activity>
+        <activity android:name=".UseEditActivity" />
+        <activity android:name=".UserManagerActivity" />
+        <activity android:name=".acticity.ShowDingDanActivity" />
+        <activity android:name=".acticity.ManerGerBossActivity" />
+        <activity android:name=".acticity.ShowCar2Activity" />
+        <activity android:name=".acticity.ShowCarActivity" />
+        <activity android:name=".acticity.AddCarActivity" />
+        <activity android:name=".acticity.YongHuMainActivity" />
+        <activity android:name=".acticity.FoodsEditActivity" />
+        <activity android:name=".acticity.FoodManegerActivity" />
+        <activity android:name=".acticity.AddFoodsActivity" />
+        <activity android:name=".acticity.ZhuCheActivity" />
+        <activity android:name=".acticity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

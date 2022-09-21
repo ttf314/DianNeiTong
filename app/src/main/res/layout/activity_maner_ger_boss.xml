@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".acticity.ManerGerBossActivity">
+
+    <Button
+        android:id="@+id/bt_food"
+        android:layout_width="163dp"
+        android:layout_height="71dp"
+        android:background="@drawable/btn_all_shape"
+        android:onClick="lookfoods"
+        android:text="食物管理"
+        android:textColor="#FF5722"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <Button
+        android:id="@+id/bt_lookcar"
+        android:layout_width="163dp"
+        android:layout_height="71dp"
+        android:background="@drawable/btn_all_shape"
+        android:onClick="lookCar"
+        android:text="购物车查看"
+        android:textColor="#FF5722"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bt_food"
+        app:layout_constraintTop_toTopOf="@+id/bt_food"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/bt_lookdingdan"
+        android:layout_width="163dp"
+        android:layout_height="71dp"
+        android:background="@drawable/btn_all_shape"
+        android:onClick="lookdingdan"
+        android:text="订单查看"
+        android:textColor="#FF5722"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_food"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <Button
+        android:id="@+id/bt_usermanerger"
+        android:layout_width="163dp"
+        android:layout_height="71dp"
+        android:background="@drawable/btn_all_shape"
+        android:onClick="lookuser"
+        android:text="用户管理"
+        android:textColor="#FF5722"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_lookdingdan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toEndOf="@+id/bt_lookdingdan"
+        app:layout_constraintTop_toTopOf="@+id/bt_lookdingdan"
+        app:layout_constraintVertical_bias="0.476" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

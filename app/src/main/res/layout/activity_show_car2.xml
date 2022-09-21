@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/background_intro"
+    tools:context=".acticity.ShowCar2Activity">
+    <!--用户管理界面-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btn_return3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_car"
+        android:layout_width="match_parent"
+        android:layout_height="352dp" />
+    <TextView
+
+        android:visibility="gone"
+        android:id="@+id/te_iduser"
+        android:layout_width="91dp"
+        android:layout_height="49dp"
+        android:text="食物数量："
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="91dp"
+            android:layout_height="49dp"
+            android:text="食物名称："
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.036" />
+        <TextView
+            android:textColor="#D9D9D9"
+            android:textSize="21dp"
+            android:id="@+id/foodnamecar"
+            android:layout_width="91dp"
+            android:layout_height="49dp"
+            android:text="名称"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.036" />
+        <Spinner
+            android:id="@+id/sp_wei"
+            android:layout_width="142dp"
+            android:layout_height="44dp">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="91dp"
+            android:layout_height="49dp"
+            android:text="食物数量："
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.036" />
+        <TextView
+            android:textColor="#D9D9D9"
+            android:textSize="21dp"
+            android:id="@+id/foodnum"
+            android:layout_width="91dp"
+            android:layout_height="49dp"
+            android:text="数量"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.036" />
+        <TextView
+            android:textColor="#D9D9D9"
+            android:textSize="21dp"
+            android:visibility="gone"
+            android:id="@+id/wei"
+            android:layout_width="91dp"
+            android:layout_height="49dp"
+            android:text="位置"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.036" />
+        <TextView
+            android:textColor="#D9D9D9"
+            android:id="@+id/tv_rmb"
+            android:layout_width="91dp"
+            android:layout_height="49dp"
+            android:text="rmb"
+            android:textSize="21dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.036" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="91dp"
+            android:layout_height="49dp"
+            android:text="总价格"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <TextView
+            android:textColor="#D9D9D9"
+            android:textSize="21dp"
+            android:id="@+id/foodMONEY"
+            android:layout_width="91dp"
+            android:layout_height="49dp"
+            android:text="价格"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <Button
+            android:onClick="bt_buy"
+            android:id="@+id/buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定购买" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
